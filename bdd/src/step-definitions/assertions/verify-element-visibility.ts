@@ -2,7 +2,7 @@ import { Then } from '@cucumber/cucumber'
 import { expect } from '@playwright/test'
 
 Then(
-    /^the "([^"]*)" page should contain the text "([^"]*)"$/,
+    /^the "([^"]*)" page should contain the text "(.*)"$/,
     async function (elementKey: string, expectedElementText: string) {
 
         console.log(`the ${elementKey} page should contain the text ${expectedElementText}`)
