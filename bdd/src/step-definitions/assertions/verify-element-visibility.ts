@@ -2,12 +2,14 @@ import { Then } from '@cucumber/cucumber'
 import { expect } from '@playwright/test'
 
 Then(
-    /^the login page should contain the text Login$/,
-    async function () {
+    /^the "([^"]*)" page should contain the text "([^"]*)"$/,
+    async function (elementKey: string, expectedElementText: string) {
 
-        console.log("the login page should contain the text Login");
+        console.log(`the ${elementKey} page should contain the text ${expectedElementText}`)
+
         const content = await global.page.textContent("[data-testid='sign-up-btn']")
-        expect(content).toBe('Log in')
+
+        expect(content).toBe(expectedElementText)
     }
 )
 

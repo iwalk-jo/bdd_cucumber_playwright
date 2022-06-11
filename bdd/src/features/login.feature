@@ -5,7 +5,7 @@ Feature: As a user I expect to be able to navigate to the login page
   @regression
   Scenario: As a user I expect to be able to view my login page
     Given I am on the "login" page
-    Then the login page should contain the text Login
+    Then the "login" page should contain the text "Log in"
 
 # Scenario: As a user I expect to be able to view my login page
 #   Given I am on the "login" page
