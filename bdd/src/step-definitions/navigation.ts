@@ -2,10 +2,10 @@ import { Given } from '@cucumber/cucumber'
 
 
 Given(
-    /^I am on the login page$/,
-    async function () {
+    /^I am on the "([^"]*)" page$/,
+    async function (pageId: string) {
 
-        console.log("I am on the login page");
+        console.log(`I am on the ${pageId} page`);
 
         await global.page.goto("http://twomatches.local:3000/login")
     }
