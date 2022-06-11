@@ -54,12 +54,16 @@ AfterAll(async () => {
 
 });
 
-Before(async () => {
-    global.context = await global.browser.newContext();
+Before(async (scenario) => {
+    global.context = await global.browser.newContext({
+        recordVideo: {
+            dir: './reports/videos/' + scenario.pickle.name,
+        }
+    })
     global.page = await global.context.newPage();
 
 });
 
 After(async () => {
-    await global.browser.close();
+    await global.page.close()
 });
