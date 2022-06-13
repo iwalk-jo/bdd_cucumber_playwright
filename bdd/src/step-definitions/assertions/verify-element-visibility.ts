@@ -1,59 +1,60 @@
 import { Then } from '@cucumber/cucumber'
 import { expect } from '@playwright/test'
 
+// // setup without cucumber world
+// Then(
+//     /^the "([^"]*)" should be displayed$/,
+//     async function (elementKey: string) {
 
-Then(
-    /^the "([^"]*)" should be displayed$/,
-    async function (elementKey: string) {
+//         console.log(`the ${elementKey} should be displayed`)
 
-        console.log(`the ${elementKey} should be displayed`)
+//         const locator = global.page.locator("[data-testid='login-form']")
 
-        const locator = global.page.locator("[data-testid='login-form']")
-
-        await expect(locator).toBeVisible();
-    }
-)
-
-Then(
-    /^the "([^"]*)" page should contain the text "(.*)"$/,
-    async function (elementKey: string, expectedElementText: string) {
-
-        console.log(`the ${elementKey} page should contain the text ${expectedElementText}`)
-
-        const content = await global.page.textContent("[data-testid='sign-up-btn']")
-
-        expect(content).toBe(expectedElementText)
-    }
-)
-
-
+//         await expect(locator).toBeVisible();
+//     }
+// )
 
 // Then(
 //     /^the "([^"]*)" page should contain the text "(.*)"$/,
 //     async function (elementKey: string, expectedElementText: string) {
-//         const {
-//             screen: { page },
-//         } = this;
-//         console.log(`the ${elementKey} page should contain the text ${expectedElementText}`);
 
-//         const content = await page.textContent("[data-testid='sign-up-btn']")
+//         console.log(`the ${elementKey} page should contain the text ${expectedElementText}`)
+
+//         const content = await global.page.textContent("[data-testid='sign-up-btn']")
 
 //         expect(content).toBe(expectedElementText)
 //     }
 // )
 
 
-// Then(
-//     /^the "([^"]*)" should be displayed$/,
-//     async function (elementKey: string) {
-//         const {
-//             screen: { page },
 
-//         } = this;
-//         console.log(`the ${elementKey} should be displayed`)
+Then(
+    /^the "([^"]*)" page should contain the text "(.*)"$/,
+    async function (elementKey: string, expectedElementText: string) {
+        const {
+            screen: { page },
+        } = this;
 
-//         const locator = page.locator("[data-testid='login-form']")
+        console.log(`the ${elementKey} page should contain the text ${expectedElementText}`)
 
-//         await expect(locator).toBeVisible();
-//     }
-// )
+        const content = await page.textContent("[data-testid='sign-up-btn']")
+
+        expect(content).toBe(expectedElementText)
+    }
+)
+
+
+Then(
+    /^the "([^"]*)" should be displayed$/,
+    async function (elementKey: string) {
+        const {
+            screen: { page },
+        } = this;
+
+        console.log(`the ${elementKey} should be displayed`)
+
+        const locator = page.locator("[data-testid='login-form']")
+
+        await expect(locator).toBeVisible();
+    }
+)

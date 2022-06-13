@@ -1,54 +1,55 @@
-// import playwright, {
-//     BrowserContextOptions,
-//     Page,
-//     Browser,
-//     BrowserContext,
-//     BrowserType
-// } from "playwright";
+import playwright, {
+    BrowserContextOptions,
+    Page,
+    Browser,
+    BrowserContext,
+    BrowserType
+} from "playwright";
 
-// import { World, IWorldOptions, setWorldConstructor } from "@cucumber/cucumber";
+import { env } from '../../env/parseEnv'
+import { World, IWorldOptions, setWorldConstructor } from "@cucumber/cucumber";
 
-// import { env } from '../../env/parseEnv'
-// export type Screen = {
-//     browser: Browser;
-//     context: BrowserContext;
-//     page: Page;
-// }
 
-// export class ScenarioWorld extends World {
-//     constructor(options: IWorldOptions) {
-//         super(options)
-//     }
+export type Screen = {
+    browser: Browser;
+    context: BrowserContext;
+    page: Page;
+}
 
-//     screen!: Screen;
+export class ScenarioWorld extends World {
+    constructor(options: IWorldOptions) {
+        super(options)
+    }
 
-//     async init(contextOptions?: BrowserContextOptions): Promise<Screen> {
-//         await this.screen?.page?.close();
-//         await this.screen?.context?.close()
-//         await this.screen?.browser?.close()
+    screen!: Screen;
 
-//         const browser = await this.newBrowser();
-//         const context = await browser.newContext(contextOptions);
-//         const page = await context.newPage();
+    async init(contextOptions?: BrowserContextOptions): Promise<Screen> {
+        await this.screen?.page?.close();
+        await this.screen?.context?.close()
+        await this.screen?.browser?.close()
 
-//         this.screen = { browser, context, page };
+        const browser = await this.newBrowser();
+        const context = await browser.newContext(contextOptions);
+        const page = await context.newPage();
 
-//         return this.screen;
-//     }
+        this.screen = { browser, context, page };
 
-//     private newBrowser = async (): Promise<Browser> => {
+        return this.screen;
+    }
 
-//         const automationBrowsers = ['chromium', 'firefox', 'webkit']
-//         type AutomationBrowser = typeof automationBrowsers[number]
-//         const automationBrowser = env('UI_AUTOMATION_BROWSER') as AutomationBrowser
+    private newBrowser = async (): Promise<Browser> => {
 
-//         const BrowserType: BrowserType = playwright[automationBrowser];
-//         const browser = await BrowserType.launch({
-//             headless: process.env.HEADLESS !== 'false',
-//             args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process'],
-//         })
-//         return browser;
-//     }
-// }
+        const automationBrowsers = ['chromium', 'firefox', 'webkit']
+        type AutomationBrowser = typeof automationBrowsers[number]
+        const automationBrowser = env('UI_AUTOMATION_BROWSER') as AutomationBrowser
 
-// setWorldConstructor(ScenarioWorld)
+        const BrowserType: BrowserType = playwright[automationBrowser];
+        const browser = await BrowserType.launch({
+            headless: process.env.HEADLESS !== 'false',
+            args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process'],
+        })
+        return browser;
+    }
+}
+
+setWorldConstructor(ScenarioWorld)
