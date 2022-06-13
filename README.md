@@ -14,16 +14,26 @@ yarn cucumber
 Run cucumber-js @dev
 
 ```bash
-npm run cucumber:dev
+yarn cucumber:dev
 ```
 
 Run cucumber-js @smoke
 
 ```bash
-npm run cucumber:smoke
+yarn cucumber:smoke
 ```
 Run cucumber-js @regression
 
 ```bash
 npm run cucumber:regression
+```
+
+Manually select automation browser
+
+```bash
+export UI_AUTOMATION_BROWSER=chromium
+```
+
+```bash
+export UI_AUTOMATION_BROWSER=firefox
 ```
