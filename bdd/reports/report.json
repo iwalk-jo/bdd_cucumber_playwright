@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-login-page;as-a-user-i-expect-to-be-able-to-view-my-login-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As a user I expect to be able to view my login page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 737248500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the \"login\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3004454700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"Please log in\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194674300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the \"login\" page should contain the text \"Log in\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12182700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80884899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-login-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user I expect to be able to navigate to the login page",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]

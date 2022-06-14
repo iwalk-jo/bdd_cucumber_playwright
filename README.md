@@ -37,3 +37,10 @@ export UI_AUTOMATION_BROWSER=chromium
 ```bash
 export UI_AUTOMATION_BROWSER=firefox
 ```
+
+Running cucumber scenarios using profile
+
+```bash
+yarn cucumber --profile dev
+```
+
