@@ -4,7 +4,7 @@ import { Before, After, ITestCaseHookParameter } from "@cucumber/cucumber";
 // const {chromium} = require("playwright");
 // import { OurWorld } from "./types";
 import { ScenarioWorld } from './world'
-// import { env } from '../../env/parseEnv'
+import { env } from '../../env/parseEnv'
 
 
 Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {

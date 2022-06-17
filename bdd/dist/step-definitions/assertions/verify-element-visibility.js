@@ -12,23 +12,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-// // setup without cucumber world
-// Then(
-//     /^the "([^"]*)" should be displayed$/,
-//     async function (elementKey: string) {
-//         console.log(`the ${elementKey} should be displayed`)
-//         const locator = global.page.locator("[data-testid='login-form']")
-//         await expect(locator).toBeVisible();
-//     }
-// )
-// Then(
-//     /^the "([^"]*)" page should contain the text "(.*)"$/,
-//     async function (elementKey: string, expectedElementText: string) {
-//         console.log(`the ${elementKey} page should contain the text ${expectedElementText}`)
-//         const content = await global.page.textContent("[data-testid='sign-up-btn']")
-//         expect(content).toBe(expectedElementText)
-//     }
-// )
 (0, _cucumber.Then)(/^the "([^"]*)" page should contain the text "(.*)"$/, /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(elementKey, expectedElementText) {
     var page, content;
@@ -57,7 +40,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref.apply(this, arguments);
   };
 }());
-(0, _cucumber.Then)(/^the "([^"]*)" should be displayed$/, /*#__PURE__*/function () {
+(0, _cucumber.Then)(/^the text "([^"]*)" should be displayed$/, /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(elementKey) {
     var page, locator;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
@@ -65,7 +48,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             page = this.screen.page;
-            console.log("the ".concat(elementKey, " should be displayed"));
+            console.log("the text ".concat(elementKey, " should be displayed"));
             locator = page.locator("[data-testid='login-form']");
             _context2.next = 5;
             return (0, _test.expect)(locator).toBeVisible();
