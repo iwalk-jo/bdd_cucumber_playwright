@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74b0fbd8-afa1-470b-8ebe-6741b8fc3737" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/env/parseEnv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/reporter/cucumber-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/step-definitions/assertions/verify-element-visibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/step-definitions/homepage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/step-definitions/navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/step-definitions/related-articles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/step-definitions/setup/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/dist/step-definitions/setup/world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/env/common.env" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/env/common.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/reports/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/reports/reports.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/reports/screenshots/As a user I expect to be able to view my login page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/env/parseEnv.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/env/parseEnv.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/reporter/cucumber-report.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/reporter/cucumber-report.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/step-definitions/assertions/verify-element-visibility.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/step-definitions/assertions/verify-element-visibility.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/step-definitions/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/step-definitions/navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/step-definitions/setup/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/step-definitions/setup/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/src/step-definitions/setup/world.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/src/step-definitions/setup/world.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/types.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/bdd/package.json" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectCucumberState">
+    <option name="selectedTags">
+      <list>
+        <option value="@dev" />
+        <option value="@regression" />
+        <option value="@smoke" />
+      </list>
+    </option>
+    <option name="selection" value="@dev or @regression or @smoke" />
+  </component>
+  <component name="ProjectId" id="2BGwgran7TZyfWlbDom7FvNzOes" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KODi/Desktop/TwoMatches/demo_two/cucumber-playwright&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="cucumber-playwright" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="cucumber-playwright" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74b0fbd8-afa1-470b-8ebe-6741b8fc3737" name="Changes" comment="" />
+      <created>1656545857188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656545857188</updated>
+      <workItem from="1656545867945" duration="859000" />
+      <workItem from="1656546857307" duration="5609000" />
+      <workItem from="1656624802826" duration="498000" />
+      <workItem from="1656625336955" duration="809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

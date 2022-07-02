@@ -13,9 +13,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 5011310399,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\KODi\\Desktop\\TwoMatches\\demo_two\\cucumber-playwright\\bdd\\node_modules\\@cucumber\\cucumber\\src\\time.ts:53:14)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+              "status": "passed",
+              "duration": 1509683900
             }
           },
           {
@@ -24,11 +23,11 @@
             "line": 7,
             "name": "I am on the \"login\" page",
             "match": {
-              "location": "src\\step-definitions\\navigation.ts:4"
+              "location": "src\\step-definitions\\navigation.ts:7"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4478332800
             }
           },
           {
@@ -40,8 +39,8 @@
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 225089500
             }
           },
           {
@@ -53,17 +52,16 @@
               "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:4"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 11703999
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 1615200,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'page')\n    at ScenarioWorld.<anonymous> (C:\\Users\\KODi\\Desktop\\TwoMatches\\demo_two\\cucumber-playwright\\bdd\\src\\step-definitions\\setup\\hooks.ts:29:27)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\KODi\\Desktop\\TwoMatches\\demo_two\\cucumber-playwright\\bdd\\src\\step-definitions\\setup\\hooks.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\KODi\\Desktop\\TwoMatches\\demo_two\\cucumber-playwright\\bdd\\src\\step-definitions\\setup\\hooks.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\KODi\\Desktop\\TwoMatches\\demo_two\\cucumber-playwright\\bdd\\src\\step-definitions\\setup\\hooks.ts:28:12)"
+              "status": "passed",
+              "duration": 75174999
             }
           }
         ],

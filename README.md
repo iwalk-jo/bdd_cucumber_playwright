@@ -43,4 +43,20 @@ Running cucumber scenarios using profile
 ```bash
 yarn cucumber --profile dev
 ```
+grant access to run script runner
 
+```bash
+chmod +x ./run_tests.sh
+```
+
+windows specific script runner
+
+```bash
+./run_tests.bat dev
+```
+
+bash specific script runner
+
+```bash
+./run_tests.sh dev
+```

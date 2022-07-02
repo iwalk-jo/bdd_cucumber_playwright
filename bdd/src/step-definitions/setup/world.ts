@@ -6,27 +6,31 @@ import playwright, {
     BrowserType
 } from "playwright";
 
-import { env } from '../../env/parseEnv'
+import { env } from '../../env/parseEnv';
 import { World, IWorldOptions, setWorldConstructor } from "@cucumber/cucumber";
-
+import { GlobalConfig } from "../../env/global";
 
 export type Screen = {
     browser: Browser;
     context: BrowserContext;
     page: Page;
-}
+};
 
 export class ScenarioWorld extends World {
     constructor(options: IWorldOptions) {
         super(options)
+
+        this.globalConfig = options.parameters as GlobalConfig;
     }
+
+    globalConfig: GlobalConfig;
 
     screen!: Screen;
 
     async init(contextOptions?: BrowserContextOptions): Promise<Screen> {
         await this.screen?.page?.close();
-        await this.screen?.context?.close()
-        await this.screen?.browser?.close()
+        await this.screen?.context?.close();
+        await this.screen?.browser?.close();
 
         const browser = await this.newBrowser();
         const context = await browser.newContext(contextOptions);
@@ -47,9 +51,9 @@ export class ScenarioWorld extends World {
         const browser = await BrowserType.launch({
             headless: process.env.HEADLESS !== 'false',
             args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process'],
-        })
+        });
         return browser;
     }
-}
+};
 
-setWorldConstructor(ScenarioWorld)
+setWorldConstructor(ScenarioWorld);

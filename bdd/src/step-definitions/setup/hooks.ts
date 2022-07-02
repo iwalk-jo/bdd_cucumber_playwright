@@ -3,8 +3,8 @@ import { Before, After, ITestCaseHookParameter } from "@cucumber/cucumber";
 // import { devices, chromium } from "playwright";
 // const {chromium} = require("playwright");
 // import { OurWorld } from "./types";
-import { ScenarioWorld } from './world'
-import { env } from '../../env/parseEnv'
+import { ScenarioWorld } from './world';
+import { env } from '../../env/parseEnv';
 
 
 Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
@@ -12,8 +12,8 @@ Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
 
     const contextOptions = {
         recordVideo: {
-            dir: './reports/videos/' + scenario.pickle.name,
-            // dir: `${env('VIDEO_PATH')}${scenario.pickle.name}`,
+            // dir: './reports/videos/' + scenario.pickle.name,
+            dir: `${env('VIDEO_PATH')}${scenario.pickle.name}`,
         }
     }
 
@@ -30,11 +30,11 @@ After(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
     const scenarioStatus = scenario.result?.status;
 
     if (scenarioStatus === 'FAILED') {
-        await page.screenshot({
-            path: `./reports/screenshots/${scenario.pickle.name}.png`
-            // path: `${env('SCREENSHOT_PATH')}${scenario.pickle.name}.png`
+        const screenshot = await page.screenshot({
+            // path: `./reports/screenshots/${scenario.pickle.name}.png`
+            path: `${env('SCREENSHOT_PATH')}${scenario.pickle.name}.png`
         });
-        // await this.attach(screenshot, 'image/png')
+        await this.attach(screenshot, 'image/png')
     }
 
     await browser.close();

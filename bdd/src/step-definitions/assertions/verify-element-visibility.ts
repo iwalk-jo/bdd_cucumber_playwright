@@ -1,5 +1,5 @@
-import { Then } from '@cucumber/cucumber'
-import { expect } from '@playwright/test'
+import { Then } from '@cucumber/cucumber';
+import { expect } from '@playwright/test';
 
 Then(
     /^the "([^"]*)" page should contain the text "(.*)"$/,
@@ -14,7 +14,7 @@ Then(
 
         expect(content).toBe(expectedElementText)
     }
-)
+);
 
 
 Then(
@@ -30,4 +30,4 @@ Then(
 
         await expect(locator).toBeVisible();
     }
-)
+);
