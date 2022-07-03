@@ -24,16 +24,13 @@ var navigateToPage = /*#__PURE__*/function () {
             pagesConfig = _ref.pagesConfig, hostsConfig = _ref.hostsConfig;
             _process$env$UI_AUTOM = process.env.UI_AUTOMATION_HOST, hostName = _process$env$UI_AUTOM === void 0 ? 'localhost' : _process$env$UI_AUTOM;
             hostPath = hostsConfig["".concat(hostName)];
-            console.log("hostPath ", hostPath);
             url = new URL(hostPath);
-            console.log("url ", url);
             pagesConfigItem = pagesConfig[pageId];
             url.pathname = pagesConfigItem.route;
-            console.log("pages route ", url.pathname);
-            _context.next = 11;
+            _context.next = 8;
             return page["goto"](url.href);
 
-          case 11:
+          case 8:
           case "end":
             return _context.stop();
         }

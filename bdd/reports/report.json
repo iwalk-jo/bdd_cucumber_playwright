@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-login-page;as-a-user-i-expect-to-be-able-to-view-my-login-page",
+        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-login-page;as-a-user-i-expect-to-be-able-to-view-the-login-page",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I expect to be able to view my login page",
+        "name": "As a user I expect to be able to view the login page",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1509683900
+              "duration": 4057173600
             }
           },
           {
@@ -27,33 +27,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4478332800
+              "duration": 11313392499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the text \"Please log in\" should be displayed",
+            "name": "the \"header logo\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:20"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 225089500
+              "duration": 497866000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "the \"login\" page should contain the text \"Log in\"",
+            "name": "the \"login header\" should contain the text \"Welcome to twoMatches\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:4"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 11703999
+              "duration": 339954300
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75174999
+              "duration": 433223700
             }
           }
         ],

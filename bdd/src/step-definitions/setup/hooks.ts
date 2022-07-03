@@ -1,11 +1,12 @@
 
-import { Before, After, ITestCaseHookParameter } from "@cucumber/cucumber";
+import { Before, After, ITestCaseHookParameter, setDefaultTimeout } from "@cucumber/cucumber";
 // import { devices, chromium } from "playwright";
 // const {chromium} = require("playwright");
 // import { OurWorld } from "./types";
 import { ScenarioWorld } from './world';
-import { env } from '../../env/parseEnv';
+import { env, envNumber } from '../../env/parseEnv';
 
+setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
 
 Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
     console.log(`Running cucumber scenario ${scenario.pickle.name}`)
